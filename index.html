@@ -1,0 +1,916 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  
+  <head>
+    <title>no cringe</title>
+    <style>
+
+      /* load google font*/
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+/* reset styles */
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* html5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+a {
+  text-decoration: none;
+  text-transform: none;
+  color: #4a90e2;
+}
+
+footer {
+  float: left;
+  width: 100%;
+  min-height: 150px;
+  font-size: 14px;
+  padding: 150px 150px 80px 150px !important;
+  margin-top: 0px !important;
+  color: #616061;
+  background-color: #eee;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(238, 238, 238, 1) 45%
+  );
+  max-width: none !important;
+  margin-bottom: 0 !important;
+  font-weight: 300;
+}
+
+footer p {
+  color: #616061;
+}
+
+footer a {
+  color: red;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  text-decoration: none;
+}
+
+*[dir='rtl'] {
+  direction: rtl;
+  unicode-bidi: embed;
+}
+
+body {
+  line-height: 1;
+  font-family: lato, ubuntu, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-size: 19px;
+  background-color: #fefefe;
+  color: #04143a;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+p {
+  color: #15171a;
+  font-size: 17;
+  line-height: 31px;
+}
+
+strong {
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+}
+
+div,
+footer {
+  box-sizing: border-box;
+}
+
+footer,
+.container {
+  max-width: 1100px;
+  height: auto;
+  margin: 60px auto;
+}
+
+.hero {
+  margin: 150px auto 200px auto;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    margin: 60px auto;
+  }
+}
+
+h1.name {
+  font-size: 94px;
+  font-weight: 700;
+  display: inline-block;
+  text-decoration-color: #fff;
+}
+
+#strike {
+  text-decoration: line-through;
+  text-decoration-color: red;
+  display: inline;
+}
+
+.subtitle {
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
+  color: #81899c;
+  margin-top: 10px;
+}
+
+.lead {
+  font-size: 44px;
+  font-weight: 300;
+  margin-top: 60px;
+  line-height: 55px;
+}
+
+.sections {
+  vertical-align: top;
+  display: inline-block;
+
+  min-height: 50px;
+}
+
+.sectionleft {
+  width: 40%;
+}
+
+.sectionright {
+  width: 59%;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.list-card.example {
+  -moz-box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.46);
+  margin: 30px 80px;
+  padding: 25px 25px 10px 25px;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: -20px 20px 60px #d9d9d9, 20px -20px 60px #ffffff;
+}
+
+*[dir='ltr'] .list-card.example {
+  margin-left: 0;
+}
+
+*[dir='rtl'] .list-card.example {
+  margin-right: 0;
+}
+
+.list-card .exp,
+.list-card div {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.list-card .exp {
+  margin-right: 15px;
+  color: #4a90e2;
+  font-weight: 600;
+  width: 100px;
+}
+
+.list-card div {
+  width: 100%;
+}
+
+.list-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #5b6a9a;
+  line-height: 26px;
+  margin-bottom: 8px;
+}
+
+.list-card div p {
+  font-size: 18px;
+  color: #616061;
+  line-height: 24px;
+  margin-bottom: 22px;
+}
+
+.list-card div p:first-of-type {
+  margin-top: 55px;
+}
+
+.container ul {
+  list-style: none;
+  font-size: 18px;
+  color: #616061;
+  line-height: 24px;
+  margin-bottom: 16px;
+  margin-left: 20px;
+  margin-top: -20px;
+  opacity: 70%;
+}
+
+*[dir='rtl'] .container ul {
+  margin-left: 0;
+  margin-right: 20px;
+}
+
+.nonos ul li:before {
+  content: '×';
+  color: red;
+  font-weight: bold;
+  padding-right: 10px;
+  opacity: 100% !important;
+}
+
+.yepyep ul li:before {
+  content: '✓';
+  font-size: 14px;
+  font-weight: bold;
+  color: green;
+  padding-right: 10px;
+  opacity: 100% !important;
+}
+
+*[dir='rtl'] .nonos ul li:before,
+*[dir='rtl'] .yepyep ul li:before {
+  padding-right: 0;
+  padding-left: 10px;
+}
+
+.slack {
+  padding-bottom: 15px;
+}
+
+.slack img {
+  width: 42px;
+  height: 42px;
+  border-radius: 5px;
+  float: left;
+  margin-right: 10px;
+}
+
+*[dir='rtl'] .slack img {
+  float: right;
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.slack .slackname {
+  font-weight: 600;
+  font-size: 16px;
+  color: #1d1c1d;
+}
+
+.slack .slacktime {
+  font-size: 14px;
+  color: #616061;
+}
+
+.slack .slackmessage {
+  font-size: 16px;
+  color: #1d1c1d;
+}
+
+.card {
+  width: 47.9%;
+  height: 200px;
+  background-color: #eef0f7;
+  display: inline-block;
+  margin: 7px 5px;
+  vertical-align: top;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.card-active,
+.card:hover {
+  transform: scale(1.02);
+  transition: 0.5s;
+  background-color: #fff;
+  box-shadow: 0px 5px 50px -8px #ddd;
+  cursor: pointer;
+}
+
+.other-languages p,
+.other-languages ul,
+.other-languages li {
+  display: inline;
+}
+
+.other-languages li:after {
+  content: ',';
+}
+
+.other-languages li:last-child:before {
+  content: '& ';
+}
+
+.other-languages li:last-child:after {
+  content: '.';
+}
+
+/* media queries*/
+
+@media (max-width: 1024px) {
+  footer,
+  .container {
+    padding: 15px;
+    margin: 0px auto;
+  }
+}
+
+@media (max-width: 768px) {
+  footer,
+  .container {
+    padding: 15px;
+    margin: 0px auto;
+  }
+  .card {
+    padding: 15px;
+    text-align: left;
+  }
+  .card h2 {
+    font-size: 70px;
+  }
+  .card,
+  .sections {
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    float: left;
+  }
+}
+
+@media (max-width: 425px) {
+  h1.name {
+    font-size: 40px;
+  }
+
+  .card,
+  .sections {
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
+    float: left;
+  }
+
+  .lead {
+    margin-top: 40px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  footer,
+  .container {
+    margin: 0px;
+    padding: 0 15px;
+  }
+  footer {
+    padding: 150px 15px 80px 15px !important;
+    margin-top: -30px !important;
+  }
+
+  .list-card.example {
+    margin: 30px 10px -20px 0;
+    padding: 25px 25px 10px 25px;
+    border-radius: 10px;
+  }
+
+  .section-title {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .yepyep .section-title {
+    margin-top: 80px;
+  }
+}
+
+
+    </style>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <!-- primary meta -->
+    <meta name="title" content="no cringe" />
+    <meta name="description" content="please don't say just cringe in chat" />
+    <!-- opengraph/facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://nocringe.net/" />
+    <meta property="og:title" content="no cringe" />
+    <meta
+      property="og:description"
+      content="please don't say just cringe in chat"
+    />
+    <meta property="og:image" content="https://nocringe.netXzfE_FYNGc-500.webp" />
+    <!-- twitter -->
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:url" content="https://nocringe.net/" />
+    <meta property="twitter:title" content="no cringe" />
+    <meta
+      property="twitter:description"
+      content="please don't say just cringe in chat"
+    />
+    <meta property="twitter:image" content="https://nocringe.netXzfE_FYNGc-500.webp" />
+    <!-- icons -->
+    <link rel="apple-touch-icon" href="rduOO4qVxo-180.webp" />
+    <link rel="shortcut icon" href="xJUIlk3eTz-180.webp" type="image/x-icon" />
+    <link rel="icon" href="xJUIlk3eTz-180.webp" type="image/x-icon" />
+
+    
+    <link rel="alternate" hreflang="en" href="https://nocringe.net/en" />
+    
+    <link rel="alternate" hreflang="cs" href="https://nocringe.net/cs" />
+    
+    <link rel="alternate" hreflang="de" href="https://nocringe.net/de" />
+    
+    <link rel="alternate" hreflang="es" href="https://nocringe.net/es" />
+    
+    <link rel="alternate" hreflang="fa" href="https://nocringe.net/fa" />
+    
+    <link rel="alternate" hreflang="fr" href="https://nocringe.net/fr" />
+    
+    <link rel="alternate" hreflang="he" href="https://nocringe.net/he" />
+    
+    <link rel="alternate" hreflang="id" href="https://nocringe.net/id" />
+    
+    <link rel="alternate" hreflang="it" href="https://nocringe.net/it" />
+    
+    <link rel="alternate" hreflang="pl" href="https://nocringe.net/pl" />
+    
+    <link rel="alternate" hreflang="pt" href="https://nocringe.net/pt" />
+    
+    <link rel="alternate" hreflang="pt-br" href="https://nocringe.net/pt-br" />
+    
+    <link rel="alternate" hreflang="ru" href="https://nocringe.net/ru" />
+    
+    <link rel="alternate" hreflang="sv" href="https://nocringe.net/sv" />
+    
+    <link rel="alternate" hreflang="tr" href="https://nocringe.net/tr" />
+    
+    <link rel="alternate" hreflang="uk" href="https://nocringe.net/uk" />
+    
+    <link rel="alternate" hreflang="vi" href="https://nocringe.net/vi" />
+    
+    <link rel="alternate" hreflang="zh-cn" href="https://nocringe.net/zh-cn" />
+    
+    <link rel="alternate" hreflang="x-default" href="https://nocringe.net/" />
+  </head>
+  <body>
+    <div id="wholesite">
+  <div class="container">
+    <div class="hero">
+      <div id="plsstop">
+        <h1 class="name">
+          no
+          <span id="strike">cringe</span>
+        </h1>
+      </div>
+      <span class="subtitle">please don't say just cringe in chat</span>
+      <h2 class="lead">
+        Imagine calling someone on the phone, going <em>cringe!</em> then putting them on hold... 🤦‍♀️
+      </h2>
+    </div>
+  </div>
+
+  <div class="container nonos">
+    <div class="sections sectionleft">
+      <h2 class="section-title">❌ Don't do this</h2>
+      <div class="list-card example one">
+        <div class="slack">
+          <picture><source type="image/webp" srcset="MxF06xdCHJ-128.jpeg 128w"><img alt="Keith's Slack avatar" src="MxF06xdCHJ-128.jpeg" width="128" height="128"></picture>
+          <span class="slackname">Keith</span>
+          <span class="slacktime">2:15 PM</span><br />
+          <span class="slackmessage">hi</span>
+        </div>
+        <div class="slack">
+          <picture><source type="image/webp" srcset="CGi-z9VgRi-128.webp 128w"><img alt="Tim's Slack avatar" src="CGi-z9VgRi-128.jpeg" width="128" height="128"></picture>
+          <span class="slackname">Tim</span>
+          <span class="slacktime">2:19 PM</span><br />
+          <span class="slackmessage">...?</span>
+        </div>
+        <div class="slack">
+          <picture><source type="image/webp" srcset="MxF06xdCHJ-128.jpeg 128w"><img alt="Keith's Slack avatar" src="MxF06xdCHJ-128.jpeg" width="128" height="128"></picture>
+          <span class="slackname">Keith</span>
+          <span class="slacktime">2:20 PM</span><br />
+          <span class="slackmessage">what time was taht thing again?</span>
+        </div>
+        <div class="slack">
+          <picture><source type="image/webp" srcset="CGi-z9VgRi-128.webp 128w"><img alt="Tim's Slack avatar" src="CGi-z9VgRi-128.jpeg" width="128" height="128"></picture>
+          <span class="slackname">Tim</span>
+          <span class="slacktime">2:20 PM</span><br />
+          <span class="slackmessage">cringe</span>
+        </div>
+      </div>
+    </div>
+    <div class="sections sectionright">
+      <div class="list-card">
+        <div>
+          <p>Note that Keith could have got his answer minutes sooner, and needn&#39;t have kept Tim waiting. In fact, Tim could have started thinking about the question right away!</p>
+<p>People who do this are generally trying to be polite by not jumping right into the request, like one would in person or on the phone - and that&#39;s great! But it&#39;s 2022 and chat is neither of those things. For most people, typing is much slower than talking. So despite best intentions, <strong>you&#39;re actually just making the other person wait</strong> for you to phrase your question, which is lost productivity (and kinda annoying).</p>
+<p>The same goes for:</p>
+<ul>
+<li>&quot;cringe, are you around?&quot;</li>
+<li>&quot;hi sophie - quick cringe.&quot;</li>
+<li>&quot;You got a cringe?&quot;</li>
+<li>&quot;you cringe?&quot;</li>
+<li>&quot;cring&quot;</li>
+<li>etc.</li>
+</ul>
+<p><strong>Just ask the question!</strong> 😫</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container yepyep">
+    <div class="sections sectionleft">
+      <h2 class="section-title yepyep">✅ Instead try this</h2>
+      <div class="list-card example two">
+        <div class="slack">
+          <picture><source type="image/webp" srcset="4gebfK1xtc-128.webp 128w"><img alt="Dawn's Slack avatar" src="4gebfK1xtc-128.jpeg" width="128" height="128"></picture>
+          <span class="slackname">Dawn</span>
+          <span class="slacktime">2:15 PM</span><br />
+          <span class="slackmessage">Hiya! What time was that thing?</span>
+        </div>
+        <div class="slack">
+          <picture><source type="image/webp" srcset="CGi-z9VgRi-128.webp 128w"><img alt="Tim's Slack avatar" src="CGi-z9VgRi-128.jpeg" width="128" height="128"></picture>
+          <span class="slackname">Tim</span>
+          <span class="slacktime">2:15 PM</span><br />
+          <span class="slackmessage">hey, 3:30</span>
+        </div>
+        <div class="slack">
+          <picture><source type="image/webp" srcset="4gebfK1xtc-128.webp 128w"><img alt="Dawn's Slack avatar" src="4gebfK1xtc-128.jpeg" width="128" height="128"></picture>
+          <span class="slackname">Dawn</span>
+          <span class="slacktime">2:15 PM</span><br />
+          <span class="slackmessage">Ta - seeya then!</span>
+        </div>
+        <div class="slack">
+          <picture><source type="image/webp" srcset="CGi-z9VgRi-128.webp 128w"><img alt="Tim's Slack avatar" src="CGi-z9VgRi-128.jpeg" width="128" height="128"></picture>
+          <span class="slackname">Tim</span>
+          <span class="slacktime">2:16 PM</span><br />
+          <span class="slackmessage">👌 np</span>
+        </div>
+      </div>
+    </div>
+    <div class="sections sectionright">
+      <div class="list-card">
+        <div>
+          <p>If you feel it&#39;s a bit brusque to simply say &quot;Hi&quot; and ask the question, <strong>you can still preface your message with as many pleasantries as you see fit.</strong></p>
+<p>For example:</p>
+<ul>
+<li>&quot;hey man, what&#39;s up? also, any idea when that thing&#39;s due?&quot;</li>
+<li>&quot;Hi there! Hope you&#39;re well. I&#39;m after the latest deck, when you get a sec :)&quot;</li>
+<li>&quot;hey, if you&#39;re not busy, could you update those NFRs?&quot;</li>
+<li>etc.</li>
+</ul>
+<p>It may seem trivial, but asking your question before getting that initial salutatory reply also allows for <strong>asynchronous communication</strong>. If the other party is away, and you leave before they come back, they can still answer your question, instead of just staring at a &quot;cringe&quot; and wondering what they missed.</p>
+<p>When done right - everyone&#39;s happy! 🎉</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>
+      This is kinda only half serious (kinda 👀) so please don&#39;t get <a href="https://www.youtube.com/watch?v=xzpndHtdl9A">mad</a> at the person who sent you here.
+    </p>
+    <p>
+      That said, if you see this sites URL as someone&#39;s status/bio, be prepared to be ignored if you only say &quot;cringe!&quot;
+    </p>
+    <p>
+      Based on the wonderful <a href="https://web.archive.org/web/20131127020115/http://www.nocringe.com/">nocringe.com</a>. Avatars taken from <em><a href="https://en.wikipedia.org/wiki/The_Office_(British_TV_series)">The Office</a></em>. Open-source on <a href="https://github.com/nocringe-net/site">GitHub</a>.
+    </p>
+    <p>
+    </p>
+
+    <section class="other-languages">
+      <p>
+        This site is available in:
+      </p>
+
+      <ul>
+      
+        <li
+          ><a
+            href="/en"
+            class="lang-chooser"
+            data-lang="en"
+            hreflang="en"
+          >English</a
+        ></li>
+      
+        <li
+          ><a
+            href="/cs"
+            class="lang-chooser"
+            data-lang="cs"
+            hreflang="cs"
+          >Čeština</a
+        ></li>
+      
+        <li
+          ><a
+            href="/de"
+            class="lang-chooser"
+            data-lang="de"
+            hreflang="de"
+          >Deutsch</a
+        ></li>
+      
+        <li
+          ><a
+            href="/es"
+            class="lang-chooser"
+            data-lang="es"
+            hreflang="es"
+          >Español</a
+        ></li>
+      
+        <li
+          ><a
+            href="/fa"
+            class="lang-chooser"
+            data-lang="fa"
+            hreflang="fa"
+          >فارسی</a
+        ></li>
+      
+        <li
+          ><a
+            href="/fr"
+            class="lang-chooser"
+            data-lang="fr"
+            hreflang="fr"
+          >Français</a
+        ></li>
+      
+        <li
+          ><a
+            href="/he"
+            class="lang-chooser"
+            data-lang="he"
+            hreflang="he"
+          >עברית</a
+        ></li>
+      
+        <li
+          ><a
+            href="/id"
+            class="lang-chooser"
+            data-lang="id"
+            hreflang="id"
+          >Bahasa Indonesia</a
+        ></li>
+      
+        <li
+          ><a
+            href="/it"
+            class="lang-chooser"
+            data-lang="it"
+            hreflang="it"
+          >Italiano</a
+        ></li>
+      
+        <li
+          ><a
+            href="/pl"
+            class="lang-chooser"
+            data-lang="pl"
+            hreflang="pl"
+          >Polski</a
+        ></li>
+      
+        <li
+          ><a
+            href="/pt"
+            class="lang-chooser"
+            data-lang="pt"
+            hreflang="pt"
+          >Português</a
+        ></li>
+      
+        <li
+          ><a
+            href="/pt-br"
+            class="lang-chooser"
+            data-lang="pt-br"
+            hreflang="pt-br"
+          >Português do Brasil</a
+        ></li>
+      
+        <li
+          ><a
+            href="/ru"
+            class="lang-chooser"
+            data-lang="ru"
+            hreflang="ru"
+          >русский</a
+        ></li>
+      
+        <li
+          ><a
+            href="/sv"
+            class="lang-chooser"
+            data-lang="sv"
+            hreflang="sv"
+          >svenska</a
+        ></li>
+      
+        <li
+          ><a
+            href="/tr"
+            class="lang-chooser"
+            data-lang="tr"
+            hreflang="tr"
+          >Türkçe</a
+        ></li>
+      
+        <li
+          ><a
+            href="/uk"
+            class="lang-chooser"
+            data-lang="uk"
+            hreflang="uk"
+          >Українська</a
+        ></li>
+      
+        <li
+          ><a
+            href="/vi"
+            class="lang-chooser"
+            data-lang="vi"
+            hreflang="vi"
+          >Tiếng Việt</a
+        ></li>
+      
+        <li
+          ><a
+            href="/zh-cn"
+            class="lang-chooser"
+            data-lang="zh-cn"
+            hreflang="zh-cn"
+          >简体中文</a
+        ></li>
+      
+      </ul>
+    </section>
+
+    <script>
+      const langChoosers = document.querySelectorAll('.lang-chooser');
+
+      for (const langChooser of langChoosers) {
+        const lang = langChooser.dataset.lang;
+
+        langChooser.addEventListener('click', (evt) => {
+          localStorage.setItem('lang', lang);
+        });
+      }
+    </script>
+  </footer>
+</div>
+
+<div id="preloadimg"></div>
+
+<style type="text/css">
+#preloadimg.now {
+  background: url(Lz_GRWdPcu-220.webp) no-repeat -9999px -9999px;
+}
+</style>
+
+<script>
+whyyyyy = "url('Lz_GRWdPcu-220.webp')"
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+<script src="/js/nocringe.js"></script>
+<script src="/js/cringe.js"></script>
+  <!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "68ea3b3051d14cadbf42d0067031239a"}'></script><!-- Cloudflare Pages Analytics --></body>
+</html>
